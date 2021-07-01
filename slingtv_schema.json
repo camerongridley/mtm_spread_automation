@@ -1,0 +1,43 @@
+{
+    "$schema":"http://json-schema.org/draft-04/schema#",
+    "title":"Metric",
+    "description":"A single metric",
+    "type":"object",
+    "required":[
+       "date",
+       "name",
+       "last_week_value",
+       "prior_week_value"
+    ],
+    "properties":{
+       "date":{
+          "description":"The end day for the week",
+          "type":"string"
+       },
+       "name":{
+          "description":"The name of the metric.",
+          "type":"string"
+       },
+       "last_week_value":{
+           "description": "The metric value for last week",
+          "type":"number"
+       },
+       "prior_week_value":{
+          "description":"The metric value for the week before last.",
+          "type":"number"
+       },
+       "mtd":{
+          "description":"Month-to-date value.",
+          "type":"number"
+       },
+       "qtd":{
+          "description":"Quarter-to-date value.",
+          "type":"number"
+       },
+       "target_week":{
+          "description":"The target, or benchmark, for the weekly metric value.",
+          "type":"number"
+       }
+       
+    }
+ }
