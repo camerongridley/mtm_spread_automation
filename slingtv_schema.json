@@ -14,10 +14,18 @@
           "description":"The end day for the week",
           "type":"string"
        },
-       "name":{
-          "description":"The name of the metric.",
+       "db_name":{
+        "description":"The name of the metric in the db. This is in the style of variable naming, e.g. live_views_millions",
+        "type":"string"
+     },
+       "proper_name":{
+          "description":"The name of the metric. This is in the style of standard English, e.g. Live Views (Millions)",
           "type":"string"
        },
+       "category":{
+        "description":"The category for the division to which this metric belongs. e.g. Technical Peromance Metrics is a category in SlingTV that contains the metric Service Reliability Index (%)",
+        "type":"string"
+     },
        "last_week_value":{
            "description": "The metric value for last week",
           "type":"number"
